@@ -1,0 +1,25 @@
+{
+  "name": "contact-manager-app",
+  "version": "1.0.0",
+  "description": "MERN Contact Management System",
+  "main": "server/server.js",
+  "scripts": {
+    "install-all": "npm install && cd client && npm install && cd ..",
+    "build": "cd client && npm run build && cd ..",
+    "start": "cd server && npm start",
+    "dev:server": "cd server && npm start",
+    "dev:client": "cd client && npm run dev",
+    "preview": "cd client && npm run preview"
+  },
+  "keywords": [
+    "mern",
+    "contact",
+    "management"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
