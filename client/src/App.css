@@ -1,0 +1,164 @@
+/* src/App.css - Styles for the main App component */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+}
+
+.app-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.header-content p {
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.app-main {
+  flex: 1;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.app-error {
+  background-color: #ffe0e0;
+  border: 2px solid #ff6b6b;
+  color: #c92a2a;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* Tab Navigation Styles */
+.tab-navigation {
+  display: flex;
+  background: white;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 15px 20px;
+  border: none;
+  background: #f8f9fa;
+  color: #667eea;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.tab-button:hover {
+  background: #e9ecef;
+}
+
+.tab-button.active {
+  background: white;
+  color: #667eea;
+  border-bottom: 3px solid #667eea;
+  box-shadow: inset 0 -2px 4px rgba(102, 126, 234, 0.1);
+}
+
+/* Tab Content Styles */
+.tab-content {
+  background: white;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  min-height: 400px;
+}
+
+.form-section {
+  margin-bottom: 0;
+}
+
+.btn-toggle-form {
+  display: inline-block;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.btn-toggle-form:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
+}
+
+.app-footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.app-footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .app-header {
+    padding: 30px 15px;
+  }
+
+  .header-content h1 {
+    font-size: 26px;
+  }
+
+  .header-content p {
+    font-size: 14px;
+  }
+
+  .app-main {
+    padding: 20px 15px;
+  }
+
+  .tab-navigation {
+    flex-direction: column;
+  }
+
+  .tab-button {
+    border-bottom: none;
+    border-right: 3px solid transparent;
+  }
+
+  .tab-button.active {
+    border-bottom: none;
+    border-right: 3px solid #667eea;
+  }
+
+  .tab-content {
+    padding: 20px;
+  }
+}

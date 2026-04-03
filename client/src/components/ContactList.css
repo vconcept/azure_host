@@ -1,0 +1,47 @@
+/* ContactList.css - Styles for contact list container */
+.contact-list {
+  margin-top: 30px;
+}
+
+.contact-list h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.contacts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.loading,
+.no-contacts {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #666;
+}
+
+.loading {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts-grid {
+    grid-template-columns: 1fr;
+  }
+}
